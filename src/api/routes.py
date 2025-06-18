@@ -244,7 +244,7 @@ def trade_post():
     saved = new_trade.save_and_commit()
 
     if saved is False:
-        return jsonify()({
+        return jsonify({
             "msg": "Data Base error"
         }), 500
 
